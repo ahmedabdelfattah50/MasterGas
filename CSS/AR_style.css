@@ -17,6 +17,11 @@ footer .footerSections .footerSection .footerLinks {
 .NavbarMobile .navMenuMobile .closebtn {
     right: 100%;
 }
+
+.navbar .navbar-nav .dropdown .dropdown-menu {
+    left: -150%;
+    width: 230px;
+}
 /* ################### End Global ################### */
 
 
@@ -454,6 +459,11 @@ main .mainTools ul li {
 
 /* ################ Large devices (desktops, less than 1200px) ################ */
 @media (max-width: 1199.98px) {
+    /* ################### Start Global ################### */
+    .navbar .navbar-nav .dropdown .dropdown-menu {
+        left: -165%;
+    }
+    /* ################### End Global ################### */
     /* ################### Start index Page ################### */
     /* ============== Start Main =============== */
     main .whoWeLink {

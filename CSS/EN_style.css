@@ -13,6 +13,15 @@ footer .footerSections .footerSection .footerLinks {
     left: 100%;
 }
 
+.navbar .navbar-nav .ourServicesDropDown .dropdown-menu {
+    left: -65%;
+    width: 250px;
+}
+
+.navbar .navbar-nav .ourPartinersDropDown .dropdown-menu {
+    left: -110%;
+    width: 250px;
+}
 /* ################### End Global ################### */
 
 
@@ -486,6 +495,17 @@ main .mainTools ul li:hover {
 
 /* ################ Large devices (desktops, less than 1200px) ################ */
 @media (max-width: 1199.98px) {
+    /* ################### Start Global ################### */
+    .navbar .navbar-nav .ourServicesDropDown .dropdown-menu {
+        left: -72%;
+        width: 250px;
+    }
+    
+    .navbar .navbar-nav .ourPartinersDropDown .dropdown-menu {
+        left: -120%;
+        width: 250px;
+    }
+    /* ################### End Global ################### */
     /* ################### Start index Page ################### */
     /* ============== Start Main =============== */
     main h1 {
