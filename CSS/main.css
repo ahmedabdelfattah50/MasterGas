@@ -35,21 +35,43 @@ body {
     padding: 0;
 }
 
+/* .navbar .navbar-nav .nav-item.dropdown {
+    background-color: red;
+} */
+
+.navbar .navbar-nav .nav-item.dropdown {
+    cursor: context-menu;
+}
+
+.navbar .navbar-nav .nav-item.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
 .navbar .navbar-nav .dropdown .dropdown-toggle::after {
     display: none;
 }
 
-.navbar .navbar-nav .dropdown .dropdown-menu {
+/* .navbar .navbar-nav .dropdown .dropdown-menu {
     padding: 20px 0 10px;
     margin-top: 14px;
     text-align: center;
     border: none;
-    border-radius: 0;
+    border-radius: 0; 
+    background: red;
+} */
+
+.navbar .navbar-nav .dropdown .dropdown-menu {
+    padding: 34px 0 10px;
+    /* margin-top: 14px; */
+    text-align: center;
+    border: none;
+    border-radius: 0; 
+    /* background: red; */
 }
 
 .navbar .navbar-nav .dropdown .dropdown-menu::after {
     display: inline-block;
-    top: 0;
+    top: 14px;
     position: absolute;
     /* margin-right: .255em; */
     vertical-align: .255em;
@@ -2021,7 +2043,8 @@ main .mainTools ul li .toolSectionData input {
 /* ################### Start briefAboutCompany Page ################### */
 /* ============== Start aboutOurCompany =============== */
 .aboutOurCompany {
-    padding: 70px 0;
+    /* padding: 70px 0; */
+    padding: 60px 0;
 }
 
 .aboutOurCompany .aboutOurCompanyHeader {
@@ -2044,6 +2067,10 @@ main .mainTools ul li .toolSectionData input {
     font-size: 22px;
     line-height: 33px;
     padding: 0 10px;
+}
+
+.aboutOurCompany .aboutOurCompanyContent p:last-child {
+    margin: 0;
 }
 
 .aboutOurCompany .aboutOurCompanyImg {
@@ -2293,7 +2320,7 @@ main .mainTools ul li .toolSectionData input {
 /* ============== End BenefitsConvertingVehicles =============== */
 /* ============== Start convertingMaps =============== */
 .convertingMaps {
-    padding: 40px 0 20px;
+    padding: 40px 0;
 }
 
 .convertingMaps #convertingMaps_Section_2 {
@@ -2305,7 +2332,7 @@ main .mainTools ul li .toolSectionData input {
     font-size: 22px;
     font-weight: 600;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .convertingMaps .convertingMapsHeader:after {
@@ -2434,7 +2461,8 @@ main .mainTools ul li .toolSectionData input {
 /* ============== End aboutVehiclesConverting =============== */
 /* ============== Start cngStationsMaps =============== */
 .cngStationsMaps {
-    padding: 40px 0 20px;
+    /* padding: 40px 0 20px; */
+    padding: 40px 0;
 }
 
 .cngStationsMaps #cngStationsMaps_Section_2 {
@@ -2942,9 +2970,9 @@ main .mainTools ul li .toolSectionData input {
     }
     /* ============== End BenefitsConvertingVehicles =============== */
     /* ============== Start convertingMaps =============== */
-    .convertingMaps {
+    /* .convertingMaps {
         padding: 20px 0;
-    }
+    } */
 
     .convertingMaps .convertingMapsHeader {
         margin-bottom: 30px;
@@ -3406,13 +3434,13 @@ main .mainTools ul li .toolSectionData input {
     /* ################### End briefAboutCompany Page ################### */
     /* ============== Start aboutOurCompany =============== */
     .aboutOurCompany {
-        padding: 50px 0 80px;
+        padding: 50px 0 30px;
     }
 
     .aboutOurCompany .aboutOurCompanyImg {
         display: flex;
         justify-content: center;
-        padding: 20px 0;
+        padding: 30px 0 20px;
     }
 
     .aboutOurCompany .aboutOurCompanyImg img:nth-child(2){
@@ -3514,8 +3542,16 @@ main .mainTools ul li .toolSectionData input {
     }
     /* ============== End BenefitsConvertingVehicles =============== */
     /* ============== Start convertingMaps =============== */
+    .convertingMaps {
+       padding: 30px 0;
+    }
+
     .convertingMaps .convertingMaps_Section {
         justify-content: center !important;
+    }
+
+    .convertingMaps .convertingMapsHeader {
+        margin-bottom: 10px;
     }
 
     .convertingMaps .convertingMaps_Section .convertingMaps_Section_Content {
@@ -3554,6 +3590,9 @@ main .mainTools ul li .toolSectionData input {
     }
     /* ============== End aboutVehiclesConverting =============== */
     /* ============== Start cngStationsMaps =============== */
+    .cngStationsMaps {
+        padding: 30px 0;
+    }
     .cngStationsMaps .cngStationsMapsHeader {
         margin-bottom: 10px;
     }
@@ -4028,6 +4067,13 @@ main .mainTools ul li .toolSectionData input {
     /* ################### End aboutVehiclesConverting Page ################### */
 
 
+    /* ################### Start briefAboutCompany Page ################### */
+    .aboutOurCompany {
+        padding: 40px 0 20px;
+    }
+    /* ################### End briefAboutCompany Page ################### */
+
+    
     /* ################### Start cng_stations Page ################### */
     /* ============== Start aboutCngStations =============== */
     .aboutCngStations {
@@ -4587,9 +4633,9 @@ main .mainTools ul li .toolSectionData input {
 
     /* ################### End briefAboutCompany Page ################### */
     /* ============== Start aboutOurCompany =============== */
-    .aboutOurCompany {
+    /* .aboutOurCompany {
         padding: 40px 0 80px;
-    }
+    } */
 
     .aboutOurCompany .aboutOurCompanyHeader {
         font-size: 20px;
@@ -4597,6 +4643,11 @@ main .mainTools ul li .toolSectionData input {
 
     .aboutOurCompany .aboutOurCompanyContent p {
         font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+    .aboutOurCompany .aboutOurCompanyImg {
+        padding: 20px 0 10px;
     }
 
     .aboutOurCompany .aboutOurCompanyImg img:nth-child(2){
