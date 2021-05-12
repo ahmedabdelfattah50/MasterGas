@@ -62,18 +62,15 @@ body {
 
 .navbar .navbar-nav .dropdown .dropdown-menu {
     padding: 34px 0 10px;
-    /* margin-top: 14px; */
     text-align: center;
     border: none;
     border-radius: 0; 
-    /* background: red; */
 }
 
 .navbar .navbar-nav .dropdown .dropdown-menu::after {
     display: inline-block;
     top: 14px;
     position: absolute;
-    /* margin-right: .255em; */
     vertical-align: .255em;
     content: "";
     border-bottom: 0.7em solid;
@@ -1632,6 +1629,125 @@ main .mainTools ul li .toolSectionData input {
 /* ################### End jobs Page ################### */
 
 
+/* ################### Start connect_with_us Page ################### */
+/* ============== Start connectWithUsDetails =============== */
+.connectWithUsDetails {
+    padding: 60px 0;
+}
+
+.connectWithUsDetails .connectWithUsDetailsHeader {
+    color: #16acaa;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+}
+
+.connectWithUsDetails .connectWithUsDetailsHeader:after {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 3px;
+    background: #ed3239;
+}   
+
+.connectWithUsDetails .connectWithUsData form {
+    padding: 30px 10px;
+}
+
+.connectWithUsDetails .connectWithUsData form div {
+    padding: 0;
+}
+
+.connectWithUsDetails .connectWithUsData form input,
+.connectWithUsDetails .connectWithUsData form textarea {
+    border: 0.5px solid #707070;
+    color: #707070;
+    font-size: 18px;
+    outline: none;
+    border-radius: 7px;
+}
+
+.connectWithUsDetails .connectWithUsData form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.connectWithUsDetails .connectWithUsData form input::placeholder,
+.connectWithUsDetails .connectWithUsData form textarea::placeholder {
+    color: #707070;
+}
+
+.connectWithUsDetails .connectWithUsData form .labelHeader {
+    font-size: 20px;
+    font-weight: 600;
+    color: #707070;
+}
+
+.connectWithUsDetails .connectWithUsData form .radioBtnsSec {
+    padding: 10px 0;
+}
+
+.connectWithUsDetails .connectWithUsData form .radioBtnsSec label {
+    display: block;
+    position: relative;
+    color: #707070;
+    margin: 0 30px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.connectWithUsDetails .connectWithUsData form .radioBtnsSec label:first-child {
+    margin: 0;
+}
+
+.connectWithUsDetails .connectWithUsData form .radioBtnsSec input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.connectWithUsDetails .connectWithUsData form .radioBtnsSec .checkmark {
+    position: absolute;
+    top: 30%;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border: 3px solid #16acaa;
+    border-radius: 50%;
+}
+
+.connectWithUsDetails .connectWithUsData form .radioBtnsSec input:checked ~ .checkmark {
+    background-color: #16acaa;
+}
+
+.connectWithUsDetails .connectWithUsData .connectImg {
+    padding: 30px 0 0;
+}
+
+.connectWithUsDetails .connectWithUsData .connectImg img {
+    height: 450px;
+    width: 450px;
+}
+
+.connectWithUsDetails .connectWithUsData .btnContainer button {
+    background: #16acaa;
+    color: #fff;
+    padding: 10px 40px;
+    transition: 0.3s ease-in-out;
+}
+
+.connectWithUsDetails .connectWithUsData .btnContainer button:hover {
+    padding: 10px 60px;
+    box-shadow: 0 0 10px #16acaa;
+}
+/* ============== End connectWithUsDetails =============== */
+/* ################### End connect_with_us Page ################### */
+
+
 /* ################### Start cylinders_Test Page ################### */
 /* ============== Start cylindersTestDetails =============== */
 .cylindersTestDetails {
@@ -2694,6 +2810,32 @@ main .mainTools ul li .toolSectionData input {
 /* ################### End cng_stations Page ################### */
 
 
+/* ################### End call_us Page ################### */
+/* ============== Start callUsDetails =============== */
+.callUsDetails {
+    padding: 60px 0;
+}
+
+.callUsDetails .callUsInfo .callUsInfoContent div span {
+    font-size: 18px;
+}
+
+.callUsDetails .callUsInfo .callUsInfoContent div:nth-child(2){
+    width: 35px;
+}
+
+.callUsDetails .callUsInfo .callUsInfoContent div:nth-child(2) i {
+    font-size: 25px;
+}
+
+.callUsDetails .callUsImg img {
+    height: 300px;
+    width: 100%;
+}
+/* ============== End callUsDetails =============== */
+/* ################### End call_us Page ################### */
+
+
 /* ################ Large devices (desktops, less than 1200px) ################ */
 @media (max-width: 1199.98px) {
     /* ################### Start Global ################### */
@@ -2796,7 +2938,6 @@ main .mainTools ul li .toolSectionData input {
         padding-top: 80px;
     }
     /* ============== End transferOffers =============== */
-
     /* ============== Start latestNews =============== */
     .latestNews .latestNewsSlider .latestNewsSection {
         margin: 0 10px;
@@ -2857,6 +2998,20 @@ main .mainTools ul li .toolSectionData input {
     }
     /* ============== End GallaryWithVideo =============== */
     /* ################### End CNG Mobile Page ################### */
+
+    
+    /* ################### Start connect_with_us Page ################### */
+    /* ============== Start connectWithUsDetails =============== */
+    .connectWithUsDetails .connectWithUsData .connectImg {
+        padding: 30px 20px 0;
+    }
+
+    .connectWithUsDetails .connectWithUsData .connectImg img {
+        height: 430px;
+        width: 100%; 
+    }
+    /* ============== End connectWithUsDetails =============== */
+    /* ################### End connect_with_us Page ################### */
 
 
     /* ################### Start OurClients Page ################### */
@@ -3358,6 +3513,31 @@ main .mainTools ul li .toolSectionData input {
     /* ################### End jobs Page ################### */
 
 
+    /* ################### Start connect_with_us Page ################### */
+    /* ============== Start connectWithUsDetails =============== */
+    .connectWithUsDetails {
+        padding: 50px 0 20px;
+    }
+
+    .connectWithUsDetails .connectWithUsData {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .connectWithUsDetails .connectWithUsData .connectImg {
+        padding: 30px 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .connectWithUsDetails .connectWithUsData .connectImg img {
+        height: 430px;
+        width: 500px;
+    }
+    /* ============== End connectWithUsDetails =============== */
+    /* ################### End connect_with_us Page ################### */
+
+
     /* ################### Start cylinders_Test Page ################### */
     /* ============== Start cylindersTestDetails =============== */
     .cylindersTestDetails .cylindersTestImg {
@@ -3652,6 +3832,46 @@ main .mainTools ul li .toolSectionData input {
     }
     /* ============== End whyOurClientsChooseUs =============== */
     /* ################### End cng_stations Page ################### */
+
+
+    /* ################### End call_us Page ################### */
+    /* ============== Start callUsDetails =============== */
+    .callUsDetails {
+        padding: 50px 0;
+    }
+
+    .callUsDetails .callUsData {
+        flex-flow: column-reverse !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+    }
+
+    .callUsDetails .callUsInfo {
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    .callUsDetails .callUsInfo .callUsInfoContent {
+        padding: 20px 0;
+    }
+
+    .callUsDetails .callUsInfo .callUsInfoContent:last-child {
+        padding-bottom: 0;
+    }
+
+    .callUsDetails .callUsInfo .callUsInfoContent div span {
+        font-size: 18px;
+    }
+
+    .callUsDetails .callUsImg {
+        padding: 0;
+    }
+
+    .callUsDetails .callUsImg img {
+        height: 320px;
+    } 
+    /* ============== End callUsDetails =============== */
+    /* ################### End call_us Page ################### */
 }
 
 
@@ -3870,6 +4090,15 @@ main .mainTools ul li .toolSectionData input {
         padding: 0;
     }
     /* ============== End jobsDetails =============== */
+    /* ################### End jobs Page ################### */
+
+
+    /* ################### End jobs Page ################### */
+    /* ============== Start connectWithUsDetails =============== */
+    .connectWithUsDetails .connectWithUsDetailsHeader {
+        font-size: 20px;
+    }
+    /* ============== End connectWithUsDetails =============== */
     /* ################### End jobs Page ################### */
 
 
@@ -4149,6 +4378,15 @@ main .mainTools ul li .toolSectionData input {
     }
     /* ============== End whyOurClientsChooseUs =============== */
     /* ################### End cng_stations Page ################### */
+
+    
+    /* ################### End call_us Page ################### */
+    /* ============== Start callUsDetails =============== */
+    .callUsDetails {
+        padding: 30px 0;
+    }
+    /* ============== End callUsDetails =============== */
+    /* ################### End call_us Page ################### */
 }
 
 /* ################ Extra small devices (portrait phones, less than 576px) ################ */
@@ -4470,6 +4708,53 @@ main .mainTools ul li .toolSectionData input {
     }
     /* ============== End jobsDetails =============== */
     /* ################### End jobs Page ################### */
+
+
+
+    /* ################### Start connect_with_us Page ################### */
+    /* ============== Start connectWithUsDetails =============== */
+    .connectWithUsDetails {
+        padding: 40px 0 10px;
+    }
+
+    .connectWithUsDetails .connectWithUsData form {
+        padding: 30px 0px;
+    }
+
+    .connectWithUsDetails .connectWithUsData form .labelHeader {
+        font-size: 18px;
+    }
+
+    .connectWithUsDetails .connectWithUsData form .radioBtnsSec label {
+        margin: 0 20px;
+        font-size: 20px;
+    }
+
+    .connectWithUsDetails .connectWithUsData {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .connectWithUsDetails .connectWithUsData .connectImg {
+        padding: 30px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .connectWithUsDetails .connectWithUsData .connectImg img {
+        height: 370px;
+        width: 100%; 
+    }
+
+    .connectWithUsDetails .connectWithUsData .btnContainer button {
+        padding: 10px 30px;
+    }
+
+    .connectWithUsDetails .connectWithUsData .btnContainer button:hover {
+        padding: 10px 50px;
+    }
+    /* ============== End connectWithUsDetails =============== */
+    /* ################### End connect_with_us Page ################### */
 
 
     /* ################### Start cylinders_Test Page ################### */

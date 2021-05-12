@@ -6,7 +6,7 @@ footer .footerSections .footerSection .footerLinks {
 /* ============== End footer =============== */
 
 .NavbarMobile .navMenuMobile {
-    left: 0;
+    left: 0; 
 }
 
 .NavbarMobile .navMenuMobile .closebtn {
@@ -21,6 +21,10 @@ footer .footerSections .footerSection .footerLinks {
 .navbar .navbar-nav .ourPartinersDropDown .dropdown-menu {
     left: -110%;
     width: 250px;
+}
+
+.navbar .navbar-nav .dropdown.connectWithUsDropDown .dropdown-menu {
+    left: -35px;
 }
 /* ################### End Global ################### */
 
@@ -255,6 +259,30 @@ main .mainTools ul li:hover {
 }   
 /* ============== End jobsDetails =============== */
 /* ################### End jobs Page ################### */
+
+/* ################### Start connect_with_us Page ################### */
+/* ============== Start connectWithUsDetails =============== */
+.connectWithUsDetails .connectWithUsDetailsHeader {
+    padding: 0 0 0 10px;
+}
+
+.connectWithUsDetails .connectWithUsDetailsHeader:after {
+    left: 0;
+}   
+
+.connectWithUsDetails .connectWithUsData form .radioBtnsSec label {
+    padding-left: 20px;
+}
+
+.connectWithUsDetails .connectWithUsData form .radioBtnsSec .checkmark {
+    left: 0;
+}
+
+.connectWithUsDetails .connectWithUsData .connectImg img {
+    box-shadow: 30px 30px 0px #16acaa;
+}
+/* ============== End connectWithUsDetails =============== */
+/* ################### End connect_with_us Page ################### */
 
 
 /* ################### Start jobs Page ################### */
@@ -493,6 +521,19 @@ main .mainTools ul li:hover {
 /* ################### End vehicles_converting Page ################### */
 
 
+/* ################### End call_us Page ################### */
+/* ============== Start callUsDetails =============== */
+/* .callUsDetails .callUsData {
+    direction: rtl !important;
+} */
+
+.callUsDetails .callUsData {
+    flex-flow: row-reverse;
+}
+/* ============== End callUsDetails =============== */
+/* ################### End call_us Page ################### */
+
+
 /* ################ Large devices (desktops, less than 1200px) ################ */
 @media (max-width: 1199.98px) {
     /* ################### Start Global ################### */
@@ -681,4 +722,13 @@ main .mainTools ul li:hover {
     }
     /* ============== End aboutOurCompany =============== */
     /* ################### End briefAboutCompany Page ################### */
+
+
+    /* ################### Start connect_with_us Page ################### */
+    /* ============== Start connectWithUsDetails =============== */
+    .connectWithUsDetails .connectWithUsData .connectImg img {
+        box-shadow: 12px 12px 0px #16acaa;
+    }
+    /* ============== End connectWithUsDetails =============== */
+    /* ################### End connect_with_us Page ################### */
 }
