@@ -134,7 +134,7 @@
     <main>
         <div class="mainTools">
             <ul>
-                <li class="d-flex wow" data-wow-delay="0.6s">
+                <li class="d-flex" data-wow-delay="0.6s">
                     <div class="liSectionItems">
                         <i class="fas fa-search"></i>
                         <div class="toolSectionData d-flex align-items-center">
@@ -142,7 +142,7 @@
                         </div> 
                     </div>
                 </li>
-                <li class="d-flex wow" data-wow-delay="0.8s">
+                <li class="d-flex" data-wow-delay="0.8s">
                     <div class="liSectionItems">
                         <i class="fab fa-facebook-f"></i>
                         <div class="toolSectionData d-flex align-items-center">
@@ -150,7 +150,7 @@
                         </div>
                     </div>
                 </li> 
-                <li class="d-flex wow" data-wow-delay="1s">
+                <li class="d-flex" data-wow-delay="1s">
                     <div class="liSectionItems">
                         <i class="fas fa-phone-alt"></i>
                         <div class="toolSectionData d-flex align-items-center">
@@ -158,7 +158,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="d-flex wow" data-wow-delay="1.2s">
+                <li class="d-flex" data-wow-delay="1.2s">
                     <div class="liSectionItems">
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="toolSectionData d-flex align-items-center">
@@ -166,15 +166,64 @@
                         </div>
                     </div>
                 </li>
-                <li class="d-flex wow" data-wow-delay="1.4s">
+                <li class="d-flex" data-wow-delay="1.4s">
                     <div class="liSectionItems">
                         <i class="fas fa-calculator"></i>
                         <div class="toolSectionData d-flex align-items-center">
-                            <a href="#">سعر النفط اليوم</a>
+                            <a data-toggle="modal" data-target="#calculatorSaving">سعر النفط اليوم</a>
                         </div>
                     </div>
                 </li>
             </ul>
+            <!-- Modal of calculator -->
+            <div class="modal fade calculatorModal" id="calculatorSaving" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close d-flex align-items-center justify-content-center" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="bodyContent">
+                                <div class="headerBody text-center">
+                                    <h2>التحويل يكسبك كتير</h2>
+                                </div>
+                                <div class="fuelConsumption d-flex align-items-center justify-content-between">
+                                    <h2>استهلاك الوقود باللتر</h2>
+                                    <input type="text" id="fuelConsumptionInput" value="0">
+                                </div>
+                                <div class="gasoline92 d-flex align-items-center justify-content-between">
+                                    <h2>بنزين 92</h2>
+                                    <input type="text" id="gasoline92Input" value="0">
+                                </div>
+                                <div class="naturalGas d-flex align-items-center justify-content-between">
+                                    <h2>غاز طبيعي</h2>
+                                    <input type="text" id="naturalGasInput" value="0">
+                                </div>
+                                <div class="calcResult d-flex align-items-center">
+                                    <div class="calcBtnSec col-3 d-flex">
+                                        <button class="calcBtn col-11" id="calcBtn">حساب</button>
+                                    </div>
+                                    <div class="resultSec d-flex align-items-center justify-content-between col-9">
+                                        <div class="saving">
+                                            <h2>التوفير</h2>
+                                        </div>
+                                        <div class="monthlySavings text-center">
+                                            <h2>الشهرى</h2>
+                                            <input type="text" id="monthlySavingsInput" readonly>
+                                        </div>
+                                        <div class="annualSavings text-center">
+                                            <h2>السنوى</h2>
+                                            <input type="text" id="annualSavingsInput" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="container"> 
             <div class="d-flex flex-column align-items-center justify-content-center">
@@ -669,6 +718,39 @@
     <script src="JS/bootstrap_rtl_4.5.3.bundle.min.js"></script>
     <script src="JS/slick.min.js"></script>
     <script src="JS/wow.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // ###### calculator function
+            $('#calcBtn').click(function () {  
+                var fuelConsumptionInput = $("#fuelConsumptionInput").val(),
+                    gasoline92Input = $('#gasoline92Input').val(),
+                    naturalGasInput = $('#naturalGasInput').val(),
+
+                monthlySavingsInput = $('#monthlySavingsInput'),
+                annualSavingsInput = $('#annualSavingsInput');
+
+                if(fuelConsumptionInput == ""){
+                    fuelConsumptionInput = 0;
+                }
+
+                if(gasoline92Input == ""){
+                    gasoline92Input = 0;
+                }
+
+                if(naturalGasInput == ""){
+                    naturalGasInput = 0;
+                }
+
+                fuelConsumptionInput = parseInt(fuelConsumptionInput);
+                gasoline92Input = parseInt(gasoline92Input);
+                naturalGasInput = parseInt(naturalGasInput);
+                    
+                // ######### the operations
+                monthlySavingsInput.val( fuelConsumptionInput + gasoline92Input + naturalGasInput );
+                annualSavingsInput.val( fuelConsumptionInput + gasoline92Input + naturalGasInput );
+            });
+        });
+    </script>
     <script src="JS/main.js"></script>
 </body>
 </html>
