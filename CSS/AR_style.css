@@ -165,8 +165,8 @@ main .mainTools ul li {
 }
 
 .ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after {
-    right: 10px;
-    transform: scaleX(-1);
+    left: 10px; 
+    /* transform: scaleX(-1); */
 }
 /* ============== Start ourMaps =============== */
 /* ============== Start latestNews =============== */
@@ -414,8 +414,8 @@ main .mainTools ul li {
 }
 
 .convertingMaps .convertingMaps_Section .convertingMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after {
-    right: 10px;
-    transform: scaleX(-1);
+    left: 10px;
+    /* transform: scaleX(-1); */
 }
 
 .convertingMaps .nav-pills {
@@ -449,8 +449,8 @@ main .mainTools ul li {
 }
 
 .cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after {
-    right: 10px;
-    transform: scaleX(-1);
+    left: 10px;
+    /* transform: scaleX(-1); */
 }
 
 .cngStationsMaps .nav-pills {

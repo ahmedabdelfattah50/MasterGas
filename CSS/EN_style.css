@@ -184,8 +184,8 @@ main .mainTools ul li:hover {
 }
 
 .ourMaps .ourMaps_Section .ourMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after {
-    left: 10px;
-    transform: scaleX(1);
+    right: 10px;
+    transform: scaleX(-1);
 }
 /* ============== Start ourMaps =============== */
 /* =============== Start the section control of ourMaps =============== */
@@ -444,8 +444,8 @@ main .mainTools ul li:hover {
 }
 
 .convertingMaps .convertingMaps_Section .convertingMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after {
-    left: 10px;
-    transform: scaleX(1);
+    right: 10px;
+    transform: scaleX(-1);
 }
 
 .convertingMaps .nav-pills {
@@ -484,7 +484,7 @@ main .mainTools ul li:hover {
 }
 
 .cngStationsMaps .cngStationsMaps_Section .cngStationsMaps_Section_Tabs .nav-pills a.tab_with_arrow_icon::after {
-    left: 10px;
+    right: 10px;
     transform: scaleX(-1);
 }
 
