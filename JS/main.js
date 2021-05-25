@@ -237,7 +237,7 @@ $(document).ready(function(){
   event.preventDefault();
   $('html , body').animate({
       scrollTop: 0
-  },1000);
+  },100);
   });
 
   // ---------- menu in navbar ----------
