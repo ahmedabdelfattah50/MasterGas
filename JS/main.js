@@ -68,7 +68,6 @@ $(document).ready(function(){
 
 
 
-
   // $$$$$$$$$$$ vehicles_converting Maps Control $$$$$$$$$$$
   // this is the section 1 of ourMaps_Section
   var convertingMaps_Section_1 = document.querySelector('#convertingMaps_Section_1'), 
@@ -234,14 +233,27 @@ $(document).ready(function(){
 
   // $$$$$$ this for the animation of the icon go up $$$$$$
   goUp.click(function(event){
-  event.preventDefault();
-  $('html , body').animate({
-      scrollTop: 0
-  },100);
+    event.preventDefault();
+    $('html , body').animate({
+        scrollTop: 0
+    },100);
   });
 
   // ---------- menu in navbar ----------
   var bodyWidth = $('body').innerWidth();
+
+    if(bodyWidth <= 751){
+      $('#searchField').attr('data-toggle', "modal");
+      $('#telephoneField').attr('data-toggle', "modal");
+      $('#addressField').attr('data-toggle', "modal");
+      $('#calcuField').attr('data-toggle', "modal");
+    } else {
+      $('#searchField').removeAttr('data-toggle');
+      $('#telephoneField').removeAttr('data-toggle');
+      $('#addressField').removeAttr('data-toggle');
+      $('#calcuField').removeAttr('data-toggle');
+    }
+
     $('.navbar .langLink .navbar-toggler').click(function(){
       $('.navbar .collapse').hide();
       if( $('.NavbarMobile .navMenuMobile').width() > 0 ){
@@ -254,7 +266,7 @@ $(document).ready(function(){
         } else if(bodyWidth >= 558 && bodyWidth <= 767){
           $(".NavbarMobile .navMenuMobile").css('width','38%');
           $('.NavbarMobile .navMenuMobile .menuAllSections .nav-item').css('padding','20px');
-        } else if(bodyWidth >= 300 && bodyWidth <= 557){
+        } else if(bodyWidth >= 270 && bodyWidth <= 557){
           $(".NavbarMobile .navMenuMobile").css('width','60%');
           $('.NavbarMobile .navMenuMobile .menuAllSections .nav-item').css('padding','20px');
         }
