@@ -39,10 +39,6 @@ html {
     padding: 0;
 }
 
-/* .navbar .navbar-nav .nav-item.dropdown {
-    background-color: red;
-} */
-
 .navbar .navbar-nav .nav-item.dropdown {
     cursor: context-menu;
 }
@@ -54,15 +50,6 @@ html {
 .navbar .navbar-nav .dropdown .dropdown-toggle::after {
     display: none;
 }
-
-/* .navbar .navbar-nav .dropdown .dropdown-menu {
-    padding: 20px 0 10px;
-    margin-top: 14px;
-    text-align: center;
-    border: none;
-    border-radius: 0; 
-    background: red;
-} */
 
 .navbar .navbar-nav .dropdown .dropdown-menu {
     padding: 34px 0 10px;
@@ -511,8 +498,6 @@ main .mainTools ul li .toolSectionData input {
     color:#707070;
 }
 /* ============== End mainBranches =============== */
-
-
 /* ============== Start calculatorModal =============== */
 .calculatorModal .modal-header {
     border: none;
@@ -661,8 +646,6 @@ main .mainTools ul li .toolSectionData input {
     padding-top: 10px;
 }
 /* ============== End calculatorModal =============== */
-
-
 /* ============== Start sliderAboutCompany =============== */
 .sliderAboutCompany {
     padding: 170px 0;
@@ -4075,6 +4058,141 @@ main .mainTools ul li .toolSectionData input {
 
 
     /* ################### Start index Page ################### */
+    /* ============== Start main =============== */
+    /* ------ main tools ------ */
+    main .mainTools ul li {
+        width: 220px !important;
+        height: 40px !important;
+    }
+
+    main .mainTools ul li i {
+        width: 50px;
+        height: 50px;
+        font-size: 17px;
+        cursor: pointer;
+    }
+    /* ============== Start searchModal, addressModal,telephoneModal =============== */
+    .searchModal .modal-header,
+    .addressModal .modal-header,
+    .telephoneModal .modal-header,
+    .calculatorModal .modal-header {
+        border: none;
+        padding: 25px 16px 20px;
+    }
+
+    .searchModal .modal-header .close,
+    .addressModal .modal-header .close,
+    .telephoneModal .modal-header .close {
+        background: #ed3239;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        outline: none;
+        margin-left: 0px;
+    }
+
+    .searchModal .modal-header .close span,
+    .addressModal .modal-header .close span,
+    .telephoneModal .modal-header .close span {
+        color: #fff;
+        border-radius: 50%;
+    }
+
+    .searchModal .modal-header .close span i,
+    .addressModal .modal-header .close span i,
+    .telephoneModal .modal-header .close span i {
+        font-size: 20px;
+    }
+
+    .searchModal .modal-body,
+    .addressModal .modal-body,
+    .telephoneModal .modal-body,
+    .calculatorModal .modal-body {
+        padding: 10px;
+    }
+
+    .searchModal .modal-body .bodyContent,
+    .addressModal .modal-body .bodyContent,
+    .telephoneModal .modal-body .bodyContent,
+    .calculatorModal .modal-body .bodyContent {
+        border: 3px solid #16acaa;
+        border-radius: 10px;
+        padding: 15px 10px;
+    }
+
+    .searchModal .modal-body .bodyContent h2,
+    .addressModal .modal-body .bodyContent h2,
+    .telephoneModal .modal-body .bodyContent h2,
+    .calculatorModal .modal-body .bodyContent .headerBody h2 {
+        color: #ed3239;
+        font-size: 25px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .calculatorModal .modal-body .bodyContent .headerBody {
+        padding-bottom: 0px;
+    }
+
+    .calculatorModal .modal-body .bodyContent .headerBody h2::after {
+        height: 0;
+    }
+
+    .searchModal .modal-body .bodyContent input {
+        margin: 0;
+        color: #ed3239;
+        font-size: 18px;
+        outline-color: #16acaa;
+        width: 90%;
+    }
+
+    .addressModal .modal-body .bodyContent p,
+    .telephoneModal .modal-body .bodyContent a {
+        margin: 0;
+        color: #16acaa;
+        font-size: 20px;
+    }
+
+    .calculatorModal .modal-body .bodyContent .fuelConsumption h2,
+    .calculatorModal .modal-body .bodyContent .gasoline92 h2,
+    .calculatorModal .modal-body .bodyContent .naturalGas h2 {
+        font-size: 20px;
+    }
+
+    .calculatorModal .modal-body .bodyContent .fuelConsumption input,
+    .calculatorModal .modal-body .bodyContent .gasoline92 input,
+    .calculatorModal .modal-body .bodyContent .naturalGas input {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .calculatorModal .modal-body .bodyContent .calcResult {
+        flex-wrap: wrap;
+    }
+
+    .calculatorModal .modal-body .bodyContent .calcResult .resultSec {
+        padding: 10px;
+        border-radius: 5px;
+        flex-wrap: wrap;
+        justify-content: space-around !important;
+        align-items: center ;
+    }
+
+    .calculatorModal .modal-body .bodyContent .calcResult .resultSec input {
+        width: 60px !important;
+    }
+
+    .calculatorModal .modal-body .bodyContent .calcResult .resultSec .saving h2 {
+        font-size: 20px;
+    }
+
+    .calculatorModal .modal-body .bodyContent .calcResult .resultSec .monthlySavings h2,
+    .calculatorModal .modal-body .bodyContent .calcResult .resultSec .annualSavings h2 {
+        font-size: 18px;
+    }
+    /* ============== End searchModal, addressModal,telephoneModal =============== */
+    /* ============== End Main =============== */
     /* ============== Start mainBranches =============== */
     .mainBranches .totalMainBranches .branchSection {
         padding: 10px 15px;
@@ -4562,6 +4680,7 @@ main .mainTools ul li .toolSectionData input {
     /* ============== Start go_up =============== */
     .go_up {
         right: 20px;
+        top: 90%;
     }
     /* ============== End go_up =============== */ 
     /* ============== Start pageHeader =============== */
@@ -4574,10 +4693,6 @@ main .mainTools ul li .toolSectionData input {
 
     /* ################### Start index Page ################### */
     /* ============== Start Main =============== */
-    main .mainTools {
-        display: none !important;
-    }
-
     main .whoWeLink img {
         width: 35px;
         height: 35px;
@@ -4588,6 +4703,13 @@ main .mainTools ul li .toolSectionData input {
         height: 50px;
     }
     /* ============== End Main =============== */
+
+    /* ============== Start searchModal, addressModal,telephoneModal =============== */
+    .calculatorModal .modal-body .bodyContent .calcResult .calcBtnSec .calcBtn {
+        padding: 15px 10px;
+        margin-bottom: 10px;
+    }
+    /* ============== End searchModal, addressModal,telephoneModal =============== */
     /* ============== Start mainBranches =============== */
     .mainBranches .totalMainBranches {
         padding: 15px 0;

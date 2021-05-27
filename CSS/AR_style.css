@@ -78,7 +78,6 @@ main .mainTools ul,
 main .mainTools ul li {
     direction: ltr !important;
 }
-
 /* ============== End mainTools =============== */
 /* ============== End Main =============== */
 /* ============== Start mainBranches =============== */
@@ -567,6 +566,21 @@ main .mainTools ul li {
     main .whoWeLink {
         width: 25%;
     }
+
+    /* ============== Start mainTools =============== */
+    main .mainTools ul li .liSectionItems {
+        height: 40px;
+    }
+
+    main .mainTools ul li i {
+        height: 40px;
+    }
+
+    main .mainTools ul li:hover {
+        left: 0px;
+        width: 60px;
+    }
+    /* ============== End mainTools =============== */
     /* ============== Start Main =============== */
     /* ============== Start sliderAboutCompany =============== */
     .sliderAboutCompany .aboutCompanySlider .sliderSection .sliderData h2 {

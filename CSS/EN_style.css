@@ -642,6 +642,28 @@ main .mainTools ul li:hover {
     main .whoWeLink {
         width: 35%;
     }
+    /* ============== Start mainTools =============== */
+    main .mainTools {
+        right: -200px;
+    }
+
+    main .mainTools ul li {
+        width: 60px;
+    }
+
+    main .mainTools ul li .liSectionItems {
+        height: 40px;
+    }
+
+    main .mainTools ul li i {
+        height: 40px;
+    }
+
+    main .mainTools ul li:hover {
+        right: 0px;
+        width: 60px;    
+    }
+    /* ============== End mainTools =============== */
     /* ============== End Main =============== */
     /* ============== Start sliderAboutCompany =============== */
     .sliderAboutCompany .backCurve {
